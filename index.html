@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Weather App</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <h1>WEATHER APP</h1>
+            <p>Welcome to the Weather App!</p>
+            <select id="cityDropdown">
+                <option value="Kolkata">
+                    Kolkata
+                </option>
+                <option value="Mumbai">
+                    Mumbai
+                </option>
+                <option value="Bengaluru">
+                    Bangaluru
+                </option>
+                <option value="Delhi">
+                    Delhi
+                </option>
+                <option value="Chennai">
+                    Chennai
+                </option>
+                <option value="Assam">
+                    Assam
+                </option>
+            </select>
+
+            <button onclick="getWeather()">Get Weather</button>
+            <button onclick="toggleUnit()">Toggle °C / °F</button>
+            <div id="weatherResult"></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
